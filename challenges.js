@@ -17,6 +17,8 @@ function sayHello() {
   return 'Hello!'
 }
 
+console.log(sayHello())
+console.log(sayHello())
 
 /*-----------------------------------------------------------------
 Challenge: 01-addOne
@@ -34,8 +36,7 @@ addOne(-5) //=> -4
 -----------------------------------------------------------------*/
 // Your solution for 01-addOne here:
 
-
-
+addOne(num1) //=> num1+1
 
 
 /*-----------------------------------------------------------------
@@ -57,6 +58,13 @@ addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
 
+function addTwoNumbers(num1, num2) {
+  if(isNaN(num1)) return "NaN"
+  if(isNaN(num2)) return "NaN"
+  let total = num1 + num2;
+  return total;
+  // returns some answer
+}
 
 
 
